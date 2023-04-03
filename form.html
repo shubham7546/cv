@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <h2>this is form tutorial</h2>
+    <form action="backend.php">
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+
+        <!-- better to use text under label as above than to just write the text as below -->
+        
+        <div>
+            <label for="myrole">role:</label>
+            <input type="text" name="Role" id="myrole">
+        </div>
+
+        <div>email:<input type="email" name="myEmail" id=""></div>
+
+        <div>date:<input type="date" name="myDate" id=""></div>
+
+        <div>number(use "e" for power of 10):<input type="number" name="myNumber" id=""></div>
+
+        <div>
+            gender:
+
+            <!-- for contains id -->
+            <!-- name under input type should be same if you want only one to be marked -->
+            <label for="male">male</label>
+            <input type="radio" name="mygender" id="male">
+
+            <label for="female">female</label>
+            <input type="radio" name="mygender" id="female">
+
+            <label for="other">other</label>
+            <input type="radio" name="mygender" id="other">
+           
+        </div>
+
+        <div>
+            <label for="myEligibility">are you eligible:</label>
+            <input type="checkbox" name="myEligibility" unchecked id=""></div>
+
+        <input type="reset" value="reset">
+        <div>write here:<textarea name="bio" id="" cols="30" rows="10"></textarea></div>
+
+        <div>
+            <label for="car">your car:</label>
+            <select name="myCar" id="car">
+                <option value="ind" selected>indica </option>
+                <option>fortuner</option>
+                <option>bmw</option>
+                <option value="aukad se bahar">mercadies</option>
+            </select>
+        </div>
+
+        <div><input type="submit" value="submit"></div>
+
+    </form>
+
+
+
+
+</body>
+
+</html>
